@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Flask-SocketIO Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+    <h1>Flask-SocketIO Example</h1>
+    <input type="text" id="message_input" placeholder="Enter a message">
+    <button id="send_button">Send</button>
+    <div id="message_area"></div>
+
+    <script>
+        // Tạo một biến "socket" và kết nối đến máy chủ Socket.IO
+        var socket = io('http://localhost:5000/');
+
+        // Xử lý sự kiện "message" từ máy chủ
+        socket.on('event', function(message) {
+            var message_area = document.getElementById('message_area');
+            message_area.innerHTML += '<p>' + message + '</p>';
+        });
+
+        // Xử lý sự kiện khi nút "Send" được nhấn
+        document.getElementById('send_button').onclick = function() {
+            var message_input = document.getElementById('message_input');
+            var message = message_input.value;
+            // Gửi tin nhắn tới máy chủ qua sự kiện "message"
+            socket.emit('message', message);
+            message_input.value = '';
+        };
+    </script>
+</body>
+</html> -->
